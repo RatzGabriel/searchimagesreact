@@ -1,13 +1,15 @@
 export interface DisplayImagesProps {
-  images: any;
+  images: [];
 }
 
-const DisplayImages: React.FC<DisplayImagesProps> = (images: any) => {
+const DisplayImages: React.FC<DisplayImagesProps> = (images) => {
   const results: any = images;
   let imgs: any;
 
   if (results.images.length > 0) {
     imgs = results.images.map((image: any) => {
+      console.log("img", image);
+
       let farm = image.farm;
       let server = image.server;
       let id = image.id;

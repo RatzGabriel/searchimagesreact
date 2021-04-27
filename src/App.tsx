@@ -5,10 +5,6 @@ import "./App.css";
 import Header from "./components/Sites/Header";
 import DisplayImages from "./components/Sites/DisplayImages";
 
-interface ApiFunction {
-  getImages: any;
-}
-
 function App() {
   const [images, setImages] = useState<[]>([]);
 
@@ -16,7 +12,7 @@ function App() {
     apiCall("cat");
   }, []);
 
-  const apiCall = async (searchTerm: any): Promise<[]> => {
+  const apiCall = async (searchTerm: string): Promise<[]> => {
     const getImages = await api(searchTerm);
     setImages(getImages);
     return getImages;
