@@ -28,7 +28,7 @@ const BtnSearch = styled.button`
   padding: 3em;
   margin: 1em;
   color: white;
-  background-color: #9086b4;
+  background-color: #27213d;
   border: none;
   border-radius: 8%;
   :hover {
