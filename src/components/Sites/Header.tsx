@@ -23,6 +23,10 @@ const Header: React.FC<HeaderProps> = ({ apiCall }) => {
         />
         <button type="submit">Submit</button>
       </form>
+      <button onClick={() => apiCall("Mountain")}>Mountain</button>
+      <button onClick={() => apiCall("Beach")}>Beach</button>
+      <button onClick={() => apiCall("Birds")}>Birds</button>
+      <button onClick={() => apiCall("Food")}>Food</button>
     </div>
   );
 };
